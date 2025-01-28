@@ -13,3 +13,9 @@
         padding-block: 1.5rem;
     }
 }
+
+@media screen and (width >= 75em) {
+    .header .logo {
+        width: 7rem;
+    }
+}
