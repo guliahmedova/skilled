@@ -1,0 +1,25 @@
+.button {
+    font-size: var(--fs-7);
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 10.5px 24px;
+    border-radius: 20px;
+    transition: background 150ms ease-in-out;
+    display: inline-block;
+}
+
+.button.dark {
+    background: var(--color-blue-900);
+    color: var(--color-white);
+}
+.button.dark:hover {
+    background: var(--color-blue-600);
+}
+
+.button.pink {
+    background: var(--gradient-pink);
+    color: var(--color-white);
+}
+.button.pink:hover {
+    background: var(--color-pink-600);
+}
