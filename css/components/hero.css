@@ -20,15 +20,17 @@
     pointer-events: none;
 }
 
-@media screen and (width >= 50.625em) {
+@media (width >= 50.625em) {
     .hero {
         grid-template-columns: repeat(2, 1fr);
         position: relative;
     }
+
     .hero__text {
         padding-block: 42px;
         padding-inline-end: 0;
     }
+
     .hero picture {
         max-width: none;
         position: absolute;
@@ -38,9 +40,13 @@
     }
 }
 
-@media screen and (width >= 75em) {
+@media (width >= 75em) {
     .hero picture {
         max-width: 1040px;
         translate: 47% -27%;
+    }
+
+    .hero__text {
+        padding-block: 110px;
     }
 }

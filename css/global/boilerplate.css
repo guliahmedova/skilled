@@ -15,27 +15,32 @@
     box-sizing: border-box;
 }
 
+main {
+    overflow-x: clip;
+}
+
 body {
-    margin: 0;
     font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
     font-weight: 500;
+    margin: 0;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     line-height: 1.2;
+    font-weight: 800;
     margin: 0;
-    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
+    max-width: 35ch;
     color: var(--color-grey);
     line-height: 1.5;
-    max-width: 50ch;
 }
 
 img {
@@ -44,6 +49,17 @@ img {
     height: auto;
 }
 
-a {
-    text-decoration: none;
+.logo {
+    width: 4.955625rem;
+    transition: opacity 150ms ease-in-out;
+}
+
+@media (width >= 75em) {
+    .logo {
+        width: 6.9375rem;
+    }
+}
+
+.logo:hover {
+    opacity: 0.75;
 }
