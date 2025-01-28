@@ -63,3 +63,17 @@ img {
 .logo:hover {
     opacity: 0.75;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--gradient-pink);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-purple);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-pink-600);
+}
